@@ -2,6 +2,7 @@
   "name": "denismcmahon-cv",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://denismcmahon.github.io/denismcmahon-cv",
   "type": "module",
   "scripts": {
     "dev": "vite",

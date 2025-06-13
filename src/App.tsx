@@ -9,14 +9,16 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="cv-container">
-      <Header />
-      <Summary />
-      <Skills />
-      <Experience />
-      <Projects />
-      <Education />
-      <Footer />
+    <div className="bg-[#f6f6f6] text-gray-800 min-h-screen px-6 py-10 font-sans">
+      <div className="max-w-3xl mx-auto space-y-14">
+        <Header />
+        <Summary />
+        <Skills />
+        <Experience />
+        <Projects />
+        <Education />
+        <Footer />
+      </div>
     </div>
   );
 }

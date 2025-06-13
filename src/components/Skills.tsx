@@ -17,6 +17,9 @@ const Skills = () => {
         <p>
           <span className="font-semibold">Databases:</span> MongoDB, PostgreSQL
         </p>
+        <p>
+          <span className="font-semibold">Testing:</span> Jest, Chai
+        </p>
       </div>
     </section>
   );

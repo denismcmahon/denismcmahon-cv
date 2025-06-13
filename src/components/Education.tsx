@@ -7,8 +7,8 @@ const Education = () => {
 
       <div>
         <h3 className="text-lg font-semibold">Self-Taught Developer</h3>
-        <p className="text-sm text-gray-500 mb-2 font-medium">2001 – Present</p>
-        <ul className="list-disc list-inside space-y-1 text-gray-800">
+        <p className="text-sm text-gray-500 mb-2 font-medium">2001 - Present</p>
+        <ul className="list-disc list-outside space-y-1 text-gray-800">
           <li>
             Over two decades of hands-on software development experience, with a focus on JavaScript and full stack technologies.
           </li>

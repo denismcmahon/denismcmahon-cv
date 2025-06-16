@@ -5,10 +5,10 @@ const Education = () => {
         Education
       </h2>
 
-      <div>
-        <h3 className="text-lg font-semibold">Self-Taught Developer</h3>
+      <div className="border border-gray-200 rounded-xl p-6 shadow-sm bg-white">
+        <h3 className="text-lg font-semibold text-gray-800">Self-Taught Developer</h3>
         <p className="text-sm text-gray-500 mb-2 font-medium">2001 - Present</p>
-        <ul className="list-disc list-outside space-y-1 text-gray-800">
+        <ul className="list-disc list-outside ms-8 space-y-1 text-gray-700 text-sm">
           <li>
             Over two decades of hands-on software development experience, with a focus on JavaScript and full stack technologies.
           </li>

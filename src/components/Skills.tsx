@@ -12,17 +12,17 @@ const Skills = () => {
       { label: 'Bash/Shell', percent: 70 }
     ],
     Frontend: [
-      { label: 'React', percent: 95 },
+      { label: 'React', percent: 85 },
       { label: 'Angular', percent: 85 },
       { label: 'Vue.js', percent: 65 },
-      { label: 'Redux', percent: 85 },
-      { label: 'HTML/CSS', percent: 90 },
+      { label: 'Redux', percent: 75 },
+      { label: 'HTML/CSS', percent: 95 },
       { label: 'Bootstrap', percent: 80 },
-      { label: 'Tailwind CSS', percent: 90 },
+      { label: 'Tailwind CSS', percent: 85 },
     ],
     Backend: [
-      { label: 'Node.js', percent: 90 },
-      { label: 'Express', percent: 90 },
+      { label: 'Node.js', percent: 85 },
+      { label: 'Express', percent: 85 },
       { label: 'REST APIs', percent: 90 },
       { label: 'GraphQL', percent: 85 }
     ],

@@ -8,7 +8,8 @@ const Skills = () => {
       { label: 'PHP', percent: 70 },
       { label: 'SQL', percent: 85 },
       { label: 'JSON', percent: 95 },
-      { label: 'XML', percent: 80 },
+      { label: 'XML', percent: 95 },
+      { label: 'Bash/Shell', percent: 70 }
     ],
     Frontend: [
       { label: 'React', percent: 95 },
@@ -21,15 +22,24 @@ const Skills = () => {
     ],
     Backend: [
       { label: 'Node.js', percent: 90 },
-      { label: 'Express', percent: 85 },
+      { label: 'Express', percent: 90 },
+      { label: 'REST APIs', percent: 90 },
+      { label: 'GraphQL', percent: 85 }
     ],
     Databases: [
-      { label: 'MongoDB', percent: 75 },
+      { label: 'MongoDB', percent: 85 },
+      { label: 'MySQL', percent: 85 },
       { label: 'PostgreSQL', percent: 85 },
     ],
     Testing: [
-      { label: 'Jest', percent: 70 },
+      { label: 'Jest', percent: 75 },
+      { label: 'Mocha', percent: 65 },
       { label: 'Chai', percent: 65 },
+    ],
+    Tools: [
+      { label: 'Git/GitHub', percent: 90 },
+      { label: 'NPM', percent: 90 },
+      { label: 'Postman', percent: 80 },
     ],
     DevOps: [
       { label: 'AWS', percent: 45 },

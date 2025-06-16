@@ -52,3 +52,5 @@ export default tseslint.config({
   },
 })
 ```
+
+https://denismcmahon.github.io/denismcmahon-cv/

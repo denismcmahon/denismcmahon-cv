@@ -21,3 +21,49 @@ a {
 button {
   @apply rounded px-4 py-2 font-medium transition hover:ring-2 hover:ring-blue-300;
 }
+
+@media print {
+  /* Use A4 with modest margins */
+  @page { size: A4; margin: 10mm 12mm; }
+
+  /* White background, remove screen padding */
+  :root, html, body { background: #fff !important; }
+  body { margin: 0 !important; padding: 0 !important; }
+
+  /* Constrain to A4-ish width (your max-w-3xl ~= 768px fits well) */
+  #root { max-width: 794px; margin: 0 auto; }
+
+  /* Kill shadows/noise that waste ink and cause odd clipping */
+  .shadow, .shadow-sm, .shadow-md, .shadow-lg { box-shadow: none !important; }
+
+  /* Grids → stacked blocks so they don’t split across pages */
+  .grid, [class*="grid"] { display: block !important; }
+  .md\:grid-cols-2, .sm\:grid-cols-2, .grid-cols-2, .grid-cols-3 { /* ensure stacking */ }
+  .grid > * { width: auto !important; }
+
+  /* Avoid breaking cards/sections in half */
+  section, article, .card, .experience-item, .project-item, .education-item, .border, .rounded-xl {
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+    margin-bottom: 12px;
+  }
+
+  /* Headings shouldn’t dangle at the bottom of a page */
+  h1, h2, h3 { break-after: avoid-page; }
+
+  /* Images/tables fit page and don’t split */
+  img, table { max-width: 100% !important; page-break-inside: avoid; }
+
+  /* Freeze all animations/transitions so final state prints */
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  /* Make sure colors actually print */
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  /* Skill bars: render as static bars */
+  .skill-bar { height: 10px; background: #e5e7eb !important; border-radius: 9999px; overflow: hidden; }
+  .skill-bar .fill { display: block; height: 10px; background: #2563eb !important; }
+}

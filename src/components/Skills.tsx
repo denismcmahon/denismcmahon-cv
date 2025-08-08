@@ -38,6 +38,7 @@ const Skills = () => {
     ],
     Tools: [
       { label: 'Git/GitHub', percent: 90 },
+      { label: 'GitHub Co-Pilot', percent: 75 },
       { label: 'NPM', percent: 90 },
       { label: 'Postman', percent: 80 },
     ],
